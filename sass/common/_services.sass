@@ -1,0 +1,48 @@
+
+.services
+   text-align: center
+   padding-top: 50px
+   &__title
+      font-weight: 700
+      color: var(--color-blue)
+      font-size: 26px
+   &__text
+      font-weight: 400
+      font-size: 18px
+   &__block
+      display: flex
+      max-width: 500px  
+      margin-top: 80px
+      justify-content: center
+      align-items: start
+      @media screen and (max-width: 1005px)
+         justify-content: center
+         flex-direction: column
+         justify-content: center
+         align-items: center
+         text-align: center   
+   &__image
+      margin-right: 30px
+      @media screen and (max-width: 1005px)
+         margin-right: 0
+         margin-bottom: 30px
+
+   &__icons
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      @media screen and (max-width: 1005px)
+         text-align: center   
+                                                                                                               
+
+.icon
+   &__title
+      font-family: var(--lato)
+      font-size: 19px
+      font-weight: 700
+      color: var(--color-lato)
+   &__text
+      font-family: var(--font-family)
+      font-size: 16px
+      color: var(--color-lato)
+      line-height: 1.3rem

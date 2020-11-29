@@ -1,0 +1,122 @@
+.header
+   height: 100vh
+
+   &__container
+      position: relative
+   &__inner
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding-top: 45px
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 5
+      width: 100%
+         
+
+   &__link
+      font-family: var(--font-family)
+      font-size: 14px
+      margin-right: 45px
+      color: var(--color-text)
+      @media screen and (max-width: 992px)
+         margin-right: 0
+         margin-top: 30px
+
+      &:hover
+         color:  #ffc155
+         text-decoration: none
+      
+   &__btn
+      position: absolute        
+      top: 55%     
+      left: 51%        
+      transform: translate(-75%, -52.5%)
+      padding: 10px 20px
+      border: none
+      background: var(--color-blue)
+      border-radius: 10px
+      color: var(--color-text)
+      font-weight: 700
+      &:hover
+         background: var(--color--dblue)
+         cursor: pointer
+         outline: none
+      @media screen and (max-width: 1700px)
+         top: 67%
+         left: 52%
+      @media screen and (max-width: 950px)
+         top: 83%
+         left: 53%
+      @media screen and (max-width: 600px)
+         top: 68%
+         left: 55%
+      @media screen and (max-width: 450px)
+         top: 75%
+         left: 60%
+         
+.container
+   max-width: 1170px
+   margin: 0 auto
+
+.logo__title
+   font-family: 'Pacifico'
+   font-size: 30px
+   color: #ffc155
+
+.slider
+   font-family: var(--font-family)
+   &__image
+      filter: brightness(0.5)
+      height: 100%
+      object-fit: cover
+
+   &__desc
+      position: absolute          
+      top: 60%  
+      z-index: 1           
+      transform: translateY(-60%)
+      @media screen and (max-width: 900px)
+         bottom: 10%
+
+   &__title
+      font-size: 48px
+      @media screen and (max-width: 600px)
+         font-size: 24px
+   &__text
+      font-size: 25px
+      @media screen and (max-width: 600px)
+         padding-top: 20px
+         font-size: 16px
+.carousel-item
+   height: 100vh
+.hamburger
+   display: none
+   &:focus
+      border: none
+      outline: none
+   @media screen and (max-width: 992px)
+      display: block
+      z-index: 4
+
+.nav
+   @media screen and (max-width: 992px)
+      position: fixed
+      transition: 1s
+      right: -100%
+      top: 0
+      height: 100%
+      width: 50%
+      z-index: 3
+      flex-direction: column
+      text-align: center
+      justify-content: center
+      align-items: center
+      &.is-active
+         background-color: var(--color-blue)
+         right: 0
+.indicators__custom
+   z-index: 2
+   
+   
