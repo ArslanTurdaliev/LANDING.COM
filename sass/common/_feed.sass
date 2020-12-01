@@ -6,12 +6,17 @@
    &__container
       max-width: 1120px
       margin: 0 auto
+      
       @media screen and (max-width: 600px)
          max-width: 450px   
+      
    &__block
       background: #f6f3f3
       max-width: 525px
       border-radius: 5px
+      @media screen and (max-width: 1000px)
+         max-width: 100%
+         margin: 20px
       
    &__text
       font-style: italic
@@ -23,8 +28,15 @@
       align-items: center
       color: var(--color-dark)
       padding-top: 10px
+      @media screen and (max-width: 1000px)
+         padding: 0 30px
+      
    &__icon
       margin-right: 20px
+.second
+   @media screen and (max-width: 1000px)
+         display: none
+
       
 .main__title
    text-align: center

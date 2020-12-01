@@ -10379,6 +10379,7 @@ button.swiper-pagination-bullet {
   color: var(--color-text);
   z-index: 2;
   font-weight: 700;
+  transition: 0.2s ease;
 }
 .header__btn:hover {
   background: var(--color--dblue);
@@ -10759,6 +10760,11 @@ a:hover {
   text-decoration: none;
 }
 
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -5px;
+  z-index: -2;
+}
+
 .feed__wrap {
   display: flex;
   flex-wrap: wrap;
@@ -10777,6 +10783,12 @@ a:hover {
   max-width: 525px;
   border-radius: 5px;
 }
+@media screen and (max-width: 1000px) {
+  .feed__block {
+    max-width: 100%;
+    margin: 20px;
+  }
+}
 .feed__text {
   font-style: italic;
   max-width: 520px;
@@ -10789,8 +10801,19 @@ a:hover {
   color: var(--color-dark);
   padding-top: 10px;
 }
+@media screen and (max-width: 1000px) {
+  .feed__inner {
+    padding: 0 30px;
+  }
+}
 .feed__icon {
   margin-right: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .second {
+    display: none;
+  }
 }
 
 .main__title {
